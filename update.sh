@@ -3,12 +3,12 @@
 declare -a copy=(".eslintrc.json" ".gitignore" "gulpfile.js" "tsconfig.json");   
 declare -a copyIfNotExists=("package.json" "src" "test");
 
-blankdir="./blank-module";
+blankdir="./node-blank-module";
 
 cd ../
 
 for dir in `find *-module -type d -depth 0 `; do
-    if [[ ${dir} != "blank-module" ]]; then
+    if [[ ${dir} != "node-blank-module" ]]; then
         for file in "${copy[@]}"
         do
             echo $dir/$file;

@@ -13,6 +13,7 @@ for dir in `find *-module -type d -depth 0 `; do
         do
             echo $dir/$file;
             rm -Rf $dir/$file && cp $blankdir/$file $dir
+            chmod -w $dir/$file
         done
 
         for file in "${copyIfNotExists[@]}"
@@ -20,6 +21,7 @@ for dir in `find *-module -type d -depth 0 `; do
             if [ ! -f $dir/$file ] && [ ! -d $dir/$file ]; then
                 echo $dir/$file;
                 rm -Rf $dir/$file && cp -R $blankdir/$file $dir
+                chmod -w $dir/$file
             fi
         done
     fi

@@ -7,7 +7,7 @@ blankdir="./node-blank-module";
 
 cd ../
 
-for dir in `find *-module -type d -depth 0 `; do
+for dir in `find *-module -type d -depth 1 `; do
     if [[ ${dir} != "node-blank-module" ]]; then
         for file in "${copy[@]}"
         do

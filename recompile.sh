@@ -23,7 +23,7 @@ declare -a modules=(
     "node-log-module" #app mongodb
     "node-security-module" #app dates mongodb
 
-    "node-handler-module" #app log
+    "node-handler-module" #app log result util
 );
 
 for module in "${modules[@]}"

@@ -10,10 +10,11 @@ declare -a modules=(
     "node-strings-module" #app
     "node-files-module" #app
     "node-util-module" #app
+    "node-aws-module" #app
 
     "node-result-module" #app dates
     "node-validation-module" #app url
-    "node-upload-module" #app files
+    "node-upload-module" #app aws files
     
     "node-pagination-module" #app result
     "node-typeorm-module" #app files util

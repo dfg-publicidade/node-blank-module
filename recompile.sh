@@ -21,7 +21,7 @@ declare -a modules=(
     "node-pagination-module" #app result
     "node-typeorm-module" #app files util
     
-    "node-mongodb-module" #app pagination
+    "node-mongodb-module" #app files pagination
 
     "node-log-module" #app mongodb
     "node-security-module" #app dates mongodb

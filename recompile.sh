@@ -3,20 +3,21 @@
 declare -a modules=(
     "node-app-module"
 
+    "node-aws-module" #app
     "node-cache-module" #app
     "node-dates-module" #app
-    "node-url-module" #app
+    "node-files-module" #app
+    "node-gcloud-module" #app
+    "node-pagereader-module" #app
     "node-params-module" #app
     "node-strings-module" #app
-    "node-files-module" #app
+    "node-url-module" #app
     "node-util-module" #app
-    "node-aws-module" #app
-    "node-gcloud-module" #app
 
-    "node-result-module" #app dates
-    "node-validation-module" #app url
-    "node-upload-module" #app aws gcloud files
     "node-mail-module" #app aws files
+    "node-result-module" #app dates
+    "node-upload-module" #app aws gcloud files
+    "node-validation-module" #app url
     
     "node-pagination-module" #app result
     "node-typeorm-module" #app files util

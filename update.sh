@@ -1,7 +1,7 @@
 #!/bin/bash
 
 declare -a copyIfNotExists=("package.json" "src" "test");
-declare -a copy=(".eslintrc.json" ".gitignore" "gulpfile.js" "tsconfig.json" "test/tsconfig.json");   
+declare -a copy=(".eslintrc.json" ".gitignore" ".nycrc" "gulpfile.js" "tsconfig.json" "test/tsconfig.json");   
 
 blankdir="./node-blank-module";
 

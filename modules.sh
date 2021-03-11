@@ -34,10 +34,18 @@ for module in "${modules[@]}"
 do
     cd ../$module;
     pwd
-    npm update && npm run compile:clean
-    git add -A
-    git commit -m "Recompilação $(date +'%d/%m/%Y %H:%I:%S')"
-    git push origin master
-    # git remote -v
-    echo 
+
+    if [[ $1 == '--recompile' ]]; then
+        npm update && npm run compile:clean
+        git add -A
+        git commit -m "Recompilação $(date +'%d/%m/%Y %H:%I:%S')"
+        git push origin master
+        echo 
+    elif [[ $1 == '--test' ]]; then
+        npm run test:all
+        mkdir -p ~/Downloads/tests
+        mkdir -p ~/Downloads/tests/${module}
+        cp -R ./coverage/* ~/Downloads/tests/${module}
+        echo
+    fi    
 done

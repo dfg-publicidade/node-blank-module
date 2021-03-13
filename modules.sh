@@ -20,9 +20,9 @@ declare -a modules=(
     "node-validation-module" #app url
     
     "node-pagination-module" #app result
-    "node-typeorm-module" #app files util
     
     "node-mongodb-module" #app files pagination
+    "node-typeorm-module" #app files pagination util
 
     "node-log-module" #app mongodb
     "node-security-module" #app dates mongodb

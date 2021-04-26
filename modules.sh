@@ -9,21 +9,21 @@ declare -a modules=(
     "node-files-module" #app
     "node-gcloud-module" #app
     "node-pagereader-module" #app
-    "node-params-module" #app
     "node-strings-module" #app
     "node-url-module" #app
     "node-util-module" #app
 
     "node-mail-module" #app aws files
+    "node-params-module" #app dates
     "node-result-module" #app dates
-    "node-upload-module" #app aws gcloud files
+    "node-upload-module" #app aws gcloud files UNTESTED
     "node-validation-module" #app url
     
     "node-pagination-module" #app result
     
     "node-mongodb-module" #app files pagination
-    "node-typeorm-module" #app files util strings
-    "node-typeorm-module-2" #app files pagination util strings
+    "node-typeorm-module" #app files util strings params
+    "node-typeorm-module-2" #app files pagination util strings params
 
     "node-log-module" #app mongodb
     "node-security-module" #app dates mongodb
@@ -53,6 +53,9 @@ do
         mkdir -p ~/Downloads/tests
         mkdir -p ~/Downloads/tests/${module}
         cp -R ./coverage/* ~/Downloads/tests/${module}
+        echo
+    elif [[ $1 == '--check-tests' ]]; then
+        cd eslint test --ext .ts
         echo
     fi
 done

@@ -16,7 +16,7 @@ declare -a modules=(
     "node-mail-module" #app aws files
     "node-params-module" #app dates
     "node-result-module" #app dates
-    "node-upload-module" #app aws gcloud files UNTESTED
+    "node-upload-module" #app aws gcloud files
     "node-validation-module" #app url
     
     "node-pagination-module" #app result

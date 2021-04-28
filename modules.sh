@@ -55,7 +55,7 @@ do
         cp -R ./coverage/* ~/Downloads/tests/${module}
         echo
     elif [[ $1 == '--check-tests' ]]; then
-        cd eslint test --ext .ts
+        eslint test --ext .ts
         echo
     fi
 done

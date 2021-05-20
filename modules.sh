@@ -49,6 +49,11 @@ do
         git commit -m "Recompilação $(date +'%d/%m/%Y %H:%I:%S')"
         git push origin master
         echo 
+    elif [[ $1 == '--commit' ]]; then
+        git add -A
+        git commit -m "Refatoramentos $(date +'%d/%m/%Y %H:%I:%S')"
+        git push origin master
+        echo
     elif [[ $1 == '--test' ]]; then
         npm run test:all
         mkdir -p ~/Downloads/tests

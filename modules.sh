@@ -24,10 +24,11 @@ declare -a modules=(
     "node-mongodb-module" #app files pagination
     "node-typeorm-module" #app files util strings params
     "node-typeorm-module-2" #app files pagination util strings params
-
+    
     "node-log-module" #app mongodb
     "node-security-module" #app dates mongodb
 
+    "node-filtersort-module" #app strings params mongodb typeorm security
     "node-handler-module" #app log result util
 );
 

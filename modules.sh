@@ -28,7 +28,7 @@ declare -a modules=(
     "node-log-module" #app mongodb
     "node-security-module" #app dates mongodb
 
-    "node-filtersort-module" #app strings params mongodb typeorm security
+    "node-filtersort-module" #app strings params mongodb typeorm typeorm2 security
     "node-handler-module" #app log result util
 );
 

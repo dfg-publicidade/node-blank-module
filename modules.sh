@@ -2,34 +2,70 @@
 
 declare -a modules=(
     "node-app-module"
+    #debug
+    #express
+    #mongodb
 
     "node-aws-module" #app
+    #aws-sdk
     "node-cache-module" #app
+    #expeditious-engine-redis
+    #express-expeditious
     "node-dates-module" #app
+    #moment-timezone
     "node-files-module" #app
+    #app-root-path
+    #archiver
+    #async-csv
+    #fs-extra
+    #mime-type
     "node-gcloud-module" #app
+    #@google-cloud/storage
     "node-pagereader-module" #app
+    #puppeteer
     "node-strings-module" #app
     "node-url-module" #app
     "node-util-module" #app
+    "node-tasks-module" #app
 
     "node-mail-module" #app aws files
+    #nodemailer
     "node-params-module" #app dates
     "node-result-module" #app dates
     "node-upload-module" #app aws gcloud files
+    #express-fileupload
+    #sharp
     "node-validation-module" #app url
+    #js-brasil
+    #validator
     
     "node-pagination-module" #app result
     
     "node-mongodb-module" #app files pagination
     "node-typeorm-module" #app files util strings params
+    #mysql
+    #typeorm
     "node-typeorm-module-2" #app files pagination util strings params
+    #mysql
+    #typeorm
     
     "node-log-module" #app mongodb
+    #ipware
     "node-security-module" #app dates mongodb
+    #bcryptjs
+    #dotenv
+    #hashids
+    #jsonwebtoken
 
     "node-filtersort-module" #app strings params mongodb typeorm typeorm2 security
     "node-handler-module" #app log result util
+    "node-controllers-module" #app cache mongodb params result security
+    #axios
+
+    "node-application-module" #app controllers handler util tasks
+    #config
+    #cron
+    #express-ws
 );
 
 for module in "${modules[@]}"

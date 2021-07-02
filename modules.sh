@@ -4,7 +4,6 @@ declare -a modules=(
     "node-app-module"
     #debug
     #express
-    #mongodb
 
     "node-aws-module" #app
     #aws-sdk
@@ -15,8 +14,6 @@ declare -a modules=(
     #moment-timezone
     "node-files-module" #app
     #app-root-path
-    #archiver
-    #async-csv
     #fs-extra
     #mime-type
     "node-gcloud-module" #app
@@ -26,8 +23,7 @@ declare -a modules=(
     "node-strings-module" #app
     "node-url-module" #app
     "node-util-module" #app
-    "node-tasks-module" #app
-
+    
     "node-mail-module" #app aws files
     #nodemailer
     "node-params-module" #app dates
@@ -40,6 +36,8 @@ declare -a modules=(
     #validator
     
     "node-pagination-module" #app result
+    "node-tasks-module" #app #result
+    #cron
     
     "node-mongodb-module" #app files pagination
     "node-typeorm-module" #app files util strings params
@@ -64,7 +62,6 @@ declare -a modules=(
 
     "node-application-module" #app controllers handler util tasks
     #config
-    #cron
     #express-ws
 );
 

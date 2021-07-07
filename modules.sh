@@ -8,7 +8,6 @@ declare -a modules=(
     "node-aws-module" #app
     #aws-sdk
     "node-cache-module" #app
-    #expeditious-engine-redis
     #express-expeditious
     "node-dates-module" #app
     #moment-timezone
@@ -24,6 +23,7 @@ declare -a modules=(
     "node-url-module" #app
     "node-util-module" #app
     
+    "node-calendar-module" #app dates
     "node-mail-module" #app aws files
     #nodemailer
     "node-params-module" #app dates
@@ -57,8 +57,13 @@ declare -a modules=(
 
     "node-filtersort-module" #app strings params mongodb typeorm typeorm2 security
     "node-handler-module" #app log result util
-    "node-controllers-module" #app cache mongodb params result security
+    "node-controllers-module" #app cache calendar params result security strings util validation
     #axios
+    #expeditious-engine-redis
+    #i18n
+    #ics
+    #tedis
+    #validate
 
     "node-application-module" #app controllers handler util tasks
     #config

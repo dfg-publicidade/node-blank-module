@@ -56,16 +56,17 @@ declare -a modules=(
     #jsonwebtoken
 
     "node-filtersort-module" #app strings params mongodb typeorm typeorm2 security
-    "node-handler-module" #app log result util
-    "node-controllers-module" #app cache calendar params result security strings util validation
+    "node-handler-module" #app log result strings upload util
+    #i18n
+
+    "node-controllers-module" #app cache calendar handler params result security util validation
     #axios
     #expeditious-engine-redis
-    #i18n
     #ics
     #tedis
     #validate
 
-    "node-application-module" #app controllers handler util tasks
+    "node-application-module" #app controllers util tasks
     #config
     #express-ws
 );

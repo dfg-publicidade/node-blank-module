@@ -56,10 +56,10 @@ declare -a modules=(
     #jsonwebtoken
 
     "node-filtersort-module" #app strings params mongodb typeorm typeorm2 security
-    "node-handler-module" #app log result strings upload util
+    "node-handler-module" #app cache log pagination result strings upload util
     #i18n
 
-    "node-controllers-module" #app cache calendar handler params result security util validation
+    "node-controllers-module" #app calendar handler params result security util validation
     #axios
     #expeditious-engine-redis
     #ics

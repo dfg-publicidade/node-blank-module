@@ -77,13 +77,13 @@ do
     pwd
 
     if [[ $1 == '--upgrade' ]]; then
-        npm upgrade && npm run compile:clean
+        npm upgrade && npm run compile
         git add -A
         git commit -m "Atualização de dependências $(date +'%d/%m/%Y %H:%I:%S')"
         git push origin master
         echo   
     elif [[ $1 == '--recompile' ]]; then
-        npm update && npm run compile:clean
+        npm update && npm run compile
         git add -A
         git commit -m "Recompilação $(date +'%d/%m/%Y %H:%I:%S')"
         git push origin master

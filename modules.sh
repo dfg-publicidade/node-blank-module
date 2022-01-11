@@ -76,7 +76,13 @@ do
     cd ../$module;
     pwd
 
-    if [[ $1 == '--upgrade' ]]; then
+    if [[ $1 == '--install' ]]; then
+        npm install && npm upgrade && npm run compile
+        git add -A
+        git commit -m "Atualização de dependências $(date +'%d/%m/%Y %H:%I:%S')"
+        git push origin master
+        echo 
+    elif [[ $1 == '--upgrade' ]]; then
         npm upgrade && npm run compile
         git add -A
         git commit -m "Atualização de dependências $(date +'%d/%m/%Y %H:%I:%S')"
@@ -92,6 +98,9 @@ do
         git add -A
         git commit -m "Refatoramentos $(date +'%d/%m/%Y %H:%I:%S')"
         git push origin master
+        echo
+    elif [[ $1 == '--audit' ]]; then
+        npm audit --production
         echo
     elif [[ $1 == '--test' ]]; then
         npm run test:all
